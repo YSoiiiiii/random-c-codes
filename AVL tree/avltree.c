@@ -89,7 +89,8 @@ int height(TreeNode *root)
 	}
 	return max(height(root->left), height(root->right)) + 1;
 }
-
+/////////////////////////
+//real codes
 void single_rotate_left(TreeNode *root, TreeNode **fatherpointer)
 {
 	TreeNode *FirstNode = root;
