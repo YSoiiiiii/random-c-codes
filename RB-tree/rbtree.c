@@ -642,6 +642,7 @@ void delete(struct node* dummy, int val)
 	delete1(dummy->right, val);
 
 	free(lesserDummy);
+	//unnecessary
 	dummy->parent = NULL;
 	dummy->color = 2/*dummy*/;
 	dummy->right->color = black;
